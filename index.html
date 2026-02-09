@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fintrix corporation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+
+<body>
+    <!--header  markup-->
+    <header>
+        <!--top menu markup-->
+        <section class="menu">
+            <div class="nav_left">
+                <img src="img/logo.png" alt="logo is not showing">
+                <h1>fintrix corporation</h1>
+            </div>
+            <div class="nav_right">
+                <nav>
+                    <a href="#">home</a>
+                    <a href="#">about</a>
+                    <a href="#">contact</a>
+                    <a href="#">blog</a>
+                </nav>
+            </div>
+            <div class="nav_toggle" id="nav_menu">
+                <nav>
+                    <a href="#">home</a>
+                    <a href="#">about</a>
+                    <a href="#">contact</a>
+                    <a href="#">blog</a>
+                </nav>
+            </div>
+            <div class="toggle_btn" id="nav_toggle">
+                <img src="img/humbg.png" alt="this is the icon" onclick="showtoggle()">
+            </div>
+            <div class="toggle_close" id="toggle_close" onclick="closetoggle()">
+                <img src="img/multi.png" alt="this is the close toggle button" id="closeimg">
+            </div>
+        </section>
+        <!--banner section markup-->
+        <section class="banner">
+            <h1>fintrix corporation</h1>
+            <h3>smart accounting, strategic advisory, growth delivered</h3>
+            <button class="btn"> book consutation</button>
+        </section>
+    </header>
+    <main>
+        <!--about section styling-->
+        <section class="about">
+            <div class="about_left">
+                <img src="img/about_img.png" alt="img not found">
+            </div>
+            <div class="about_right">
+                <h1>who we are</h1>
+                <p>we help businesses simplify accounting, tax filing, and ccompliance with professional and transparent
+                    financial solution.</p>
+            </div>
+        </section>
+        <!--services section-->
+        <section class="serives">
+            <h1 class="service_tag">what we offer</h1>
+            <div class="card-list">
+                <a href="#" class="card-item">
+                    <img src="img/s1.jpg" alt="image failed to laod">
+                    <span class="developer">accounting</span>
+                    <h3>accounting and ccompliance</h3>
+                    <div class="arrow">
+                        <i class="fas fa-arrow-right card-icon"></i>
+                    </div>
+                </a>
+                <a href="#" class="card-item">
+                    <img src="img/s2.jpg" alt="Image not found ">
+                    <span class="designer">tax</span>
+                    <h3>corporate tax services</h3>
+                    <div class="arrow">
+                        <i class="fas fa-arrow-right card-icon"></i>
+                    </div>
+                </a>
+                <a href="#" class="card-item">
+                    <img src="img/s3.jpg" alt="image not found ">
+                    <span class="editor">consulting</span>
+                    <h3>business consulting</h3>
+                    <div class="arrow">
+                        <i class="fas fa-arrow-right card-icon"></i>
+                    </div>
+                </a>
+                <a href="#" class="card-item">
+                    <img src="img/s4.png" alt="image not found">
+                    <span class="editor">gst</span>
+                    <h3>gst and indirect tax</h3>
+                    <div class="arrow">
+                        <i class="fas fa-arrow-right card-icon"></i>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!--feature of fintirx markup -->
+        <section class="feature">
+            <h1 class="feature_heading">why businesses trust fintrix</h1>
+            <div class="feature_card">
+                <div class="feature_card_item">
+                    <img src="img/testi/1.png" alt="icon1">
+                    <h1>accurate and reliable</h1>
+                </div>
+                <div class="feature_card_item">
+                    <img src="img/testi/2.png" alt="icon1">
+                    <h1>accurate and reliable</h1>
+                </div>
+                <div class="feature_card_item">
+                    <img src="img/testi/3.png" alt="icon1">
+                    <h1>accurate and reliable</h1>
+                </div>
+                <div class="feature_card_item">
+                    <img src="img/testi/4.png" alt="icon1">
+                    <h1>accurate and reliable</h1>
+                </div>
+            </div>
+        </section>
+        <!--middle level approach division-->
+        <div class="bottom_poster">
+            <h1>ready to streamlne your finances</h1>
+            <button class="poster_btn">contact us</button>
+        </div>
+        <!--testimonials markup-->
+        <section class="testimonial_main">
+            <h1>what our client say about us</h1>
+            <div class="testimonials">
+                <figure class="snip1390">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg"
+                        alt="profile-sample3" class="profile" />
+                    <figcaption>
+                        <h2>Eleanor Crisp</h2>
+
+                        <blockquote>good one</blockquote>
+                    </figcaption>
+                </figure>
+                <figure class="snip1390 hover"><img
+                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg"
+                        alt="profile-sample5" class="profile" />
+                    <figcaption>
+                        <h2>Md tahsin</h2>
+
+                        <blockquote>a perfect tax calculation and solid communicative members of the corporation .
+                        </blockquote>
+                    </figcaption>
+                </figure>
+                <figure class="snip1390"><img
+                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample6.jpg"
+                        alt="profile-sample6" class="profile" />
+                    <figcaption>
+                        <h2>Sue Shei</h2>
+
+                        <blockquote>The strength to change what I can, the inability to accept what I can't and the
+                            incapacity
+                            to
+                            tell the difference.</blockquote>
+                    </figcaption>
+                </figure>
+                <figure class="snip1390"><img
+                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample6.jpg"
+                        alt="profile-sample6" class="profile" />
+                    <figcaption>
+                        <h2>Sue Shei</h2>
+
+                        <blockquote>The strength to change what I can, the inability to accept what I can't and the
+                            incapacity
+                            to
+                            tell the difference.</blockquote>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+      
+        <!--footer section markup-->
+        <div class="footer">
+            <div class="footer_right">
+                <div class="footer_logo">
+                    <img src="img/logo.png" alt="logo not found">
+                    <h1>fintirx corporation</h1>
+                </div>
+                <div class="footer_abt">
+                    <p>one of the best corporation around which is trusted by many</p>
+                </div>
+                <div class="social">
+                    <a href="#"><img src="img/social/instagram.png" alt="instagram image"></a>
+                    <a href="#"><img src="img/social/twitter.png" alt="twitter image"></a>
+                    <a href="#"><img src="img/social/facebook.png" alt="facebook image"></a>
+                     <a href="#"><img src="img/social/mail.png" alt="facebook image"></a>
+                </div>
+            </div>
+            <div class="footer_left">
+                <h2>contact us</h2>
+                <form action="action.php" class="form">
+                    <label for="email">enter your email</label><br><br>
+                    <input type="email" name="email" id="email" placeholder="email"><br><br>
+                    <label for="message">enter your massage: </label><br><br>
+                    <textarea name="message" id="message" placeholder="message"></textarea>
+                    <button class="btn send" >send</button>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="footer_bottom">
+            <p>all right reserved to &#169 shaan @2025</p>
+        </div>
+        <hr>
+    </main>
+
+
+    <!--script linked here-->
+    <script src="main.js"></script>
+</body>
+
+</html>
