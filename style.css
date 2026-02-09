@@ -1,0 +1,740 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: #1a1616;
+}
+
+/*__________________header section styling __________________*/
+
+header {
+    color: white;
+    padding: 1%;
+    background: linear-gradient(150deg, #000000, #1f1f1d);
+    background-image: url('img/img2.jpg');
+    background-position: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/*........................header media querry ...................
+@media screen and (max-width:1400px) {
+    header{
+        background-size: contain;
+    }
+}*/
+
+.menu {
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.nav_left {
+    display: flex;
+    align-items: center;
+}
+
+.nav_left img {
+    width: 50px;
+    height: auto;
+}
+
+.nav_left h1 {
+    color: rgb(255, 255, 255);
+    width: 100px;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    font-size: 1.5;
+    margin-left: 1rem;
+}
+
+/*...........media querry for the left side fintrix h1 tag .....................*/
+
+@media screen and (max-width:950px) {
+    .nav_left h1 {
+        width: 20px;
+        font-size: 1rem;
+        padding-left: 1rem;
+        margin-left: 0px;
+    }
+}
+
+/*_______________right side navigation styling _____________*/
+
+.nav_right nav {
+    margin: 20px;
+}
+
+.nav_right nav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 1rem;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.nav_right nav a:hover {
+
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.toggle_btn {
+    display: none;
+    position: absolute;
+    right: 1%;
+    margin: 3%;
+
+
+}
+
+.toggle_close {
+    margin: 0%;
+}
+
+.toggle_btn img {
+    width: 50px;
+    height: 50px;
+
+}
+
+.toggle_close img {
+    width: 50px;
+    height: auto;
+    margin-right: 0%;
+}
+
+.toggle_nav {
+    display: none;
+}
+
+/*............media querry ...........*/
+@media screen and (max-width: 1000px) {
+    .nav_right nav {
+        display: none;
+    }
+
+    .toggle_btn {
+        display: block;
+    }
+
+
+}
+
+/*____________________navigation toggle __________________*/
+.nav_toggle {
+    display: none;
+}
+
+.nav_toggle nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 10%;
+
+}
+
+.nav_toggle nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    line-height: 3rem;
+
+}
+
+.toggle_close {
+    display: none;
+}
+
+/*................medai querry for the toggle section of the website ......................*/
+
+@media screen and (max-width:1000px) {
+    .nav_toggle {
+        display: none;
+    }
+
+    .toggle_close {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .nav_toggle {
+        display: none;
+    }
+
+    .toggle_btn {
+        display: none;
+    }
+
+    .toggle_close {
+        display: none;
+    }
+}
+
+/*________________banner section styling ____________________*/
+
+.banner h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-top: 10%;
+    margin-left: 2%;
+    width: 50%;
+}
+
+.banner h3 {
+    margin-left: 2%;
+    text-transform: capitalize;
+    font-size: 2rem;
+    width: 70%;
+}
+/*........banner media querry ........................*/
+@media screen and (max-width:650px) {
+    .banner h1 {
+        font-size: 2rem;
+        
+    }
+    .banner h3{
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+}
+/*..................button styling....................*/
+.btn {
+    margin-top: 2%;
+    margin-left: 2%;
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 2rem;
+    transition: all 0.2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+    margin-bottom: 3%;
+}
+
+/*.............button media querry ....................*/
+@media screen and (max-width:1000px) {
+    .btn {
+        font-size: 15px;
+        border-radius: 10px;
+        text-align: center;
+        padding: 0.7rem;
+
+    }
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.btn::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+/*..........about section styling ..................*/
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+}
+.about_left img{
+    width: 500px;
+}
+.about_right h1{
+    color: white;
+    text-transform: uppercase;
+    padding: 4% 4% 0% 4%;
+    font-size: 4rem;
+}
+.about_right p{
+    color: white;
+    padding: 4%;   
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+@media screen and (max-width:1000px) {
+    .about_left img{
+        width: 300px;
+    }
+    .about_right h1{
+        font-size: 2rem;
+    }
+    .about_right p{
+        font-size: 1rem;
+    }
+    
+}
+@media screen and (max-width:650px) {
+    .about_left img{
+        width: 200px;
+    }
+    .about_right h1{
+        font-size: 1rem;
+    }
+    .about_right p{
+        font-size: 0.7rem;
+    }
+}
+
+/*..............services styling ........................*/
+
+.service_tag {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 20px;
+    gap: 20px;
+}
+
+.card-list .card-item {
+    background: #f9f6f6;
+    padding: 26px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: border 0.5s ease;
+      
+}
+
+.card-list .card-item:hover {
+    border: 2px solid #000;
+}
+
+.card-list .card-item img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.card-list span {
+    display: inline-block;
+    background: #F7DFF5;
+    margin-top: 32px;
+    padding: 8px 15px;
+    font-size: 0.75rem;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.card-list .developer {
+    background-color: #F7DFF5;
+    color: #B22485;
+}
+
+.card-list .designer {
+    background-color: #d1e8ff;
+    color: #2968a8;
+}
+
+.card-list .editor {
+    background-color: #d6f8d6;
+    color: #205c20;
+}
+
+.card-item h3 {
+    color: #000;
+    font-size: 1.438rem;
+    margin-top: 28px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.card-item .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-35deg);
+    height: 40px;
+    width: 40px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin-top: 40px;
+    transition: 0.2s ease;
+}
+
+.card-list .card-item:hover .arrow {
+    background: #000;
+    color: #fff;
+}
+
+@media (max-width: 1200px) {
+    .card-list .card-item {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .card-list {
+        margin: 0 auto;
+    }
+}
+
+/*___________________testimonial styling ___________________*/
+
+/*.................feature styling here.............*/
+
+.feature_heading {
+   color: rgb(255, 255, 255);
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 50px;
+   margin-top: 4%;
+   
+   
+}
+.feature_card{
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+    
+}
+.feature_card_item{
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 2%;
+    margin: 2%;
+    border: 0.1px solid black;
+    text-transform: capitalize;
+    width: 200px;
+    background-color: white;
+}
+@media screen and (max-width:500px) {
+    .feature_card_item{
+        width: 300px;
+    }
+}
+
+
+/*................ bottom poster styling .........................*/
+
+.bottom_poster{
+    color: rgb(255, 255, 255);
+    background-image: url(img/about_img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 100px;
+}
+.bottom_poster h1{
+    text-transform: uppercase;
+}
+@media  screen and (max-width:1000px) {
+    .bottom_poster{
+        padding: 20px 20px;
+    }
+}
+.poster_btn {
+    margin-top: 2%;
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4em;
+    transition: all 0.2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+}
+
+/*.............poster button media querry ....................*/
+@media screen and (max-width:1000px) {
+    .poster_btn{
+        font-size: 15px;
+        border-radius: 0.5em;
+        width: 150px;
+        text-align: center;
+        padding: 0.7rem;
+    }
+}
+
+.poster_btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.poster_btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.poster_btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.poster_btn::after {
+    background-color: #fff;
+}
+
+.poster_btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+/*............testimonial styling ...................*/
+
+.testimonials{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+   
+}
+.testimonial_main h1{
+     color: rgb(255, 255, 255);
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 30px;
+   margin-top: 4%;
+   margin-bottom: 4%;
+}
+
+
+figure.snip1390 {
+  font-family: 'Roboto', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  width: 300px;
+  height: 400px;
+  color: #000000;
+  text-align: center;
+  font-size: 16px;
+  background-color: #2C3447;
+  padding: 30px;
+  background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+figure.snip1390 *,
+figure.snip1390 *:before,
+figure.snip1390 *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+figure.snip1390 figcaption {
+  width: 100%;
+}
+figure.snip1390 h2,
+figure.snip1390 h4,
+figure.snip1390 blockquote {
+  margin: 0;
+}
+figure.snip1390 h2,
+figure.snip1390 h4 {
+  font-weight: 300;
+}
+figure.snip1390 h2 {
+  color: #ffffff;
+}
+figure.snip1390 h4 {
+  color: #a6a6a6;
+}
+figure.snip1390 blockquote {
+  font-size: 1em;
+  padding: 45px 20px 40px 50px;
+  margin-top: 30px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: inset -1.4px -1.4px 2px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  position: relative;
+}
+figure.snip1390 blockquote:before {
+  font-family: 'FontAwesome';
+  content: "\201C";
+  position: absolute;
+  font-size: 70px;
+  opacity: 0.25;
+  font-style: normal;
+  top: 0px;
+  left: 20px;
+}
+figure.snip1390 .profile {
+  width: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px;
+  border: solid 5px #A6A57A;
+}
+
+
+/*..........footer setion styling .................*/
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(56, 46, 46));
+}
+.footer_logo{
+    display: flex;
+}
+.footer_logo img{
+    width: 50px;
+    height: auto;
+}
+.footer_logo h1{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    width: 30px;
+    line-height: 1.5rem;
+    padding-left: 1.5rem;
+}
+.footer_abt p{
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    width: 50vh;
+}
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+}
+.social img{
+    padding: 30px;
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+}
+.footer_left{
+    margin-right:10%;
+}
+.footer_left h2{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.5rem;
+    padding-left: 1.5rem;
+    font-size: 35px;
+}
+.form label{
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    line-height: 1rem;
+    font-size: 25px;
+    width: 200%;
+}
+.form input{
+    width: 100%;
+    height: 30px;
+    padding: 0rem 1rem;
+}
+form.form{
+    padding: 10%;
+    width: 100%;
+}
+.form textarea{
+    width: 100%;
+    height: 40px;
+    padding: 1rem;
+}
+
+.footer_bottom{
+    height: 3rem;
+   padding: 2%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(32, 27, 27);
+}
+
+.send{
+   
+    margin-top: 20px;
+    border-radius: 2px;
+    margin-left: 0px;
+}
+
+/*............media querry for the footer ..............*/
+@media screen and (max-width:1000px) {
+    .footer{
+        display: block;
+    }
+    .footer_abt p{
+        width: auto;
+        text-align: center;
+    }
+    form.form{
+        width: auto;
+    }
+}
